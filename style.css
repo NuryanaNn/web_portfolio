@@ -30,6 +30,13 @@ body{
     background-color: white;
 }
 
+.burger .bar{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
 .hero{
     padding: 50px 5%;
     display: flex;
@@ -119,4 +126,48 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.aboutImage img{
+    width: 400px;
+}
+
+.aboutMe{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 5%;
+}
+
+/* Media Query */
+@media(max-width:480px) {
+    .navbar ul,
+    .navbar button{
+        display: none;
+    }
+
+    .hero{
+        flex-wrap: wrap;
+    }
+
+    .hero img{
+        margin-top: 20px;
+    }
+
+    .service .content{
+        flex-wrap: wrap;
+    }
+
+    .service .content .card{
+        margin-top: 30px;
+    }
+
+    .hero .teks{
+        width: 100%;
+    }
+
+    .aboutMe{
+        flex-wrap: wrap;
+    }
 }
